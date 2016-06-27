@@ -142,13 +142,23 @@
         }
 
     </style>
+%%[
+/*ET AmpScript for Subjectlines. Remove if not using ET. Includes proofing subjectline.*//
+set @subjectline = ""
 
+if recip_type == "proof" then
+set @subjectline = concat("[XX-] ",@subjectline)
+endif
+
+
+]%%
 </head>
 <body width="100%" bgcolor="#222222" style="Margin: 0;" style="margin:0; padding:0; width:100% !important;">
     <center style="width: 100%; background: #222222;">
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+        <custom name="opencounter" type="tracking"> <!-- This is for ET Tracking. If you are not using ET -->
             (Optional) This text will appear in the inbox preview, but not the email body.
         </div>
         <!-- Visually Hidden Preheader Text : END -->
@@ -210,7 +220,7 @@
                         </table>
                     </td>
                 </tr>
-                <!-- 1 Column Text + Button : BEGIN -->
+                <!-- 1 Column Text + Button : END -->
 
                 <!-- Background Image with Text : BEGIN -->
                 <tr>
