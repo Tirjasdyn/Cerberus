@@ -33,6 +33,7 @@ Let's go with something simple and permissive, shall we?
 
 [The MIT License (MIT)](http://choosealicense.com/licenses/mit/).
 
+another test
 Just a test
 
 Copyright (c) 2015 Ted Goas
